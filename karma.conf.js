@@ -5,22 +5,22 @@ module.exports = function (config) {
     basePath: '',
     frameworks: ['jasmine', 'common_js'],
     files: [
-      'commonjs/**/!(*.test).js',
-      'commonjs/**/*.test.js',
-      'commonjs/**/*.html'
+        'src/**/!(*.test).js',
+        'src/**/*.test.js',
+        'src/**/*.html'
     ],
     preprocessors: {
-      'commonjs/**/!(*.test).js': ['common_js'],
-      'commonjs/**/*.test.js': ['common_js'],
-      'commonjs/**/*.html': ['common_js']
+        'src/**/!(*.test).js': ['common_js'],
+        'src/**/*.test.js': ['common_js'],
+        'src/**/*.html': ['common_js']
     },
     common_js: {
-      transforms: {
-        'html-browserify': true
-      },
-      autoRequire: [
-        '**/commonjs/**/*.test.js'
-      ]
+        transforms: {
+            'html-browserify': true
+        },
+        autoRequire: [
+            '**/src/**/*.test.js'
+        ]
     },
     reporters: ['mocha'],
     port: 9876,

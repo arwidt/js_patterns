@@ -127,7 +127,7 @@ describe('CommonJS modules', function() {
 
         it("should be able to extend with more than one object, and should take priority in order", function () {
 
-            c2 = eFactModule.create(opts, [obj, obj2]);
+            c2 = eFactModule.create(opts, [c1, obj2]);
             expect(c2.opts().id).toBe(opts.id);
             expect(c2.state).toBe("ETATS");
             expect(c2.add(34, 34)).toBe(34 + 34);
