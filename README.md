@@ -24,5 +24,3 @@ Returns a object with a create function, the create function returns a object wi
 ### Extendable Factory
 
 Same as the factory class, but you can extend it with more functionality. When combined with a object merge function you can then pass other objects to the create function for custom objects. If you see the very nice advantages in this you should take a look at [Stampit](https://github.com/stampit-org/stampit).
-
-Banan
