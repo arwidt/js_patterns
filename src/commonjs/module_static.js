@@ -7,7 +7,7 @@ module.exports = (function() {
 
     return {
         init: function(opts) {
-            _opts = opts;
+            _opts = opts || {};
             return this;
         },
 

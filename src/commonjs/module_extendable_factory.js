@@ -4,7 +4,7 @@ var extendFactoryClass = (function() {
 
     // Factory object
     var _inst = function(opts) {
-        var _opts = opts;
+        var _opts = opts || {};
         var inst = {
             opts: function() {
                 return _opts;
